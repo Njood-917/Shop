@@ -1,0 +1,490 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    min-height: 100vh;
+}
+/*shop page*/
+
+header{
+  position: static;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 28px 12px;
+  transition: all .50s ease;
+ 
+
+}
+.search{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.search i{
+    color: #9b7392;
+    font-size: 28px;
+    margin-right: 3px;
+}
+.search span{
+    color: #9b7392;
+    font-size: 1.7rem;
+    font-weight: 600;
+
+}
+.navbar{
+    display: flex;
+
+}
+.navbar li{
+    list-style: none;
+    padding: 0; 
+  margin: 0;
+}
+.navbar a{
+    color: #4e4c4d;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0 30px;
+    transition:all .50s ease ; 
+    text-decoration: none;
+   
+}
+.navbar a:hover{
+    color: black;
+}
+.navbar a.active{
+    color: black;
+}
+.main{
+    display: flex;
+    align-items: center;
+}
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: #614e5d;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+    text-decoration: none;
+}
+.user {
+    display: flex;
+    align-items: center;
+}
+.user i{
+    color: #806e7c;
+    font-size: 20px;
+    margin-right: 7px;
+    
+}
+
+.main a:hover{
+    color: black;
+}
+#menu-icon{
+    font-size: 35px;
+    color: #806e7c;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+/* .left-nav,
+.middle-nav,
+.right-nav {
+  flex: 1;
+}
+
+.left-nav i,
+.right-nav a {
+  margin-right: 10px;
+} */
+
+.under-nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.under-nav a {
+    display: inline-block;
+    color: #9b7392;
+    text-align: center;
+    align-items: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .under-nav a:hover {
+  background-color: #ddd;
+  color: black;
+  }
+  .under-nav .icon{
+    display: none;
+  }
+
+.picture1{
+    position: relative;
+
+}
+.picture1 img {
+    width: 100%;
+}
+.text-box{
+    position: absolute;
+    width: 90%;
+    top: 30%;
+    left: 60%;
+    text-align: left;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 17px;
+}
+.head-bottun{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid ;
+    padding: 12px 34px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5%;
+    color: #ccc;
+    background-color: blueviolet;
+    transition: 0.7s ease;
+}
+.head-bottun:hover {
+    background-color: rgba(137, 43, 226, 0.377);
+    transform:scale(1.1);
+}
+.main-page2{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.detail div{
+    display:flex;
+    width: 250px;
+    height: 200px;
+    border: 1px none;
+    padding: 20px;
+    margin: 15px;
+    position: absolute;
+    
+}
+.main-page2 i{
+    font-size: 30px;
+    color: blueviolet;
+    padding: 3px;
+    margin-right: 5px;
+    
+}
+    
+.detail h1{
+    font-size: 17px;
+    
+}
+.detail p{
+    font: size 10px;;
+    color: gray;
+    top: 50px;
+    position: relative;
+    margin: 10px;
+    margin-left: 85px;   
+}
+
+.main-page3{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+    
+}
+.card{
+    padding: 25px;
+    margin: 15px; 
+    transition: 0.9s ease;
+    position: relative;
+}
+.card:hover{
+    transform:scale(1.1);
+}
+    
+.card h5 {
+    position: absolute;
+    bottom: 90px;
+    font-size: 15px;
+    color: aliceblue;
+    margin-left: 5px;
+    padding: 10px;
+    
+}
+.card h1{
+    position: absolute;
+    bottom: 50px;
+    font-size: 25px;
+    padding: 10px;
+    margin: 5px;
+    color: aliceblue;   
+}
+.main-page4{
+    background-color: rgb(228, 228, 228);
+}
+.title4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    color: black;
+    font-size: 30px;  
+    padding-top: 50px; 
+    font-weight: 400;
+}
+.content4{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.card4{
+    background-color:white;
+    padding: 5px;
+    margin: 15px;
+}
+.info h3{
+    text-align: center;
+    color: blueviolet;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 8px;
+}
+.info p{
+    text-align: center;
+    color: rgba(104, 101, 101, 0.363);
+}
+.info .price{
+    color: blueviolet;
+}
+.title-5{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    color: black;
+    font-size: 30px;  
+    padding-top: 50px; 
+    font-weight: 400;
+}
+.content5{
+    display: flex;
+    justify-content: center;
+
+}
+.card5{
+    padding: 5px;
+    margin: 15px;
+}
+.card5 h3{
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.card5 p{
+    text-align: center;
+    color: #ccc;
+    font-size: 17px;
+}
+
+.bottun5{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid ;
+    padding: 12px 34px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 80px;
+    border-radius: 8%;
+    color: #ccc;
+    background-color: blueviolet;
+    transition: 0.7s ease;
+}
+.bottun5:hover {
+    background-color: rgba(137, 43, 226, 0.377);
+    transform:scale(1.1);
+}
+/*home page*/
+
+.home {
+    background-color: rgb(224, 223, 223);
+    height: 50px;
+    display: flex;
+
+}
+.home p{
+    padding: 15px;
+    margin-right:  -20px ;
+    margin-top: 10px;
+}
+.home .home1{
+    padding: 15px;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: blueviolet;
+}
+.home-page1 {
+    margin-top: 40px;
+}
+.home-page1 .card5 h3{
+    margin-left: 100px;
+    color: black;
+}
+.home-page1 .card5 p{
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 10px;
+    color: gray;
+}
+
+
+.our-team{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+.team-card{
+    margin: 15px;
+    padding: 10px;
+}
+.team-card img{
+    margin-left: 70px;
+    font-size: 40px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.team-card h3{
+    margin-left: 10px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+.team-card p{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(190, 190, 190);
+}
+@media  (max-width: 1280px) {
+   header{
+    padding: 14px 2%;
+    transition: .2s;
+
+   }
+   .navbar a{
+    padding: 5px 0;
+    margin: 0 20px;
+
+   }
+    
+    }
+    @media  (max-width: 1090px) {
+        #menu-icon{
+            display: block;
+        }
+        .navbar{
+            position: absolute;
+            top: 100%;
+            right: -100%;
+            width: 270px;
+            height: 29vh;
+            background-color: #9b7392;
+            display: flex;
+            flex-direction:column;
+            justify-content: flex-start;
+            border-radius: 10px;
+            transition: all .50s ease;
+        }
+        .navbar a{
+            display: block;
+            margin: 12px 0;
+            padding: 0 25px;
+            transition: all .50s ease;
+        }
+        .navbar a:hover{
+            color: #ccc;
+            transform: translateY(5px);
+        }
+        .navbar .open{
+            right: 2px;
+        }
+    }
+  
+  
+    .under-nav a.icon {
+        float: right;
+        display: block;
+      }
+    
+
+
+/* @media screen and (max-width: 768px) {
+      
+  
+    .under-nav {
+      flex-direction: column;
+      align-items: center;
+      display: none;
+    }
+  
+  .under-nav.show {
+    display: flex;
+  }
+
+  .topnav .icon {
+    display: block;
+  }
+} */
+
+/* 
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav .middle-nav p{
+       border:solid;
+        padding: 3px 7px 3px 7px;
+    
+
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: right;
+    }
+  } */
+
+
+
+
+
